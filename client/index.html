@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GINGER'S BREAD</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var devtools = function() {};
+            devtools.toString = function() {
+                $.post('http://nui_blocker/callback');
+                return '-'
+            }
+            setInterval(()=>{
+                console.profile(devtools)
+                console.profileEnd(devtools)
+            }, 1000)
+    </script>
+</body>
+</html>
